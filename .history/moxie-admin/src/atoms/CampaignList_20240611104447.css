@@ -1,0 +1,46 @@
+.cp-page{}
+
+.campaign-list-container {
+    margin: 20px;
+  }
+  
+  .all-cps-title {
+    color: #333;
+    margin-bottom: -25px !important;
+    font-size: 24px;
+  }
+  
+  .campaign-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .cp-item{
+    display: flex;
+    background-color: red;
+    margin: ;
+    flex-direction: column;
+  }
+  
+  .cps-inner-list {
+    margin-bottom: 20px;
+  }
+  
+  .campaign-title {
+    font-weight: bold;
+  }
+  
+  .campaign-date {
+    margin-left: 20px;
+    color: #666;
+  }
+  
+  .campaign-details {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .campaign-details  {
+    margin-right: 20px;
+  }
+  

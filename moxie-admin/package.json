@@ -1,22 +1,46 @@
 {
   "name": "moxie-admin",
   "version": "0.1.0",
+  "proxy": "https://moxie5screen.vercel.app/",
   "private": true,
   "dependencies": {
+    "@aws-amplify/api": "^6.0.24",
+    "@aws-amplify/auth": "^6.0.25",
+    "@aws-amplify/core": "^6.0.24",
+    "@aws-amplify/pubsub": "^6.0.24",
+    "@aws-amplify/storage": "^6.0.21",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.15.18",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@react-google-maps/api": "^2.19.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aws-amplify": "^5.3.18",
+    "aws-sdk": "^2.1584.0",
+    "axios": "^1.6.8",
+    "firebase": "^10.10.0",
     "leaflet": "^1.9.4",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.3",
+    "multer-s3": "^3.0.1",
     "pigeon-maps": "^0.21.4",
+    "pusher-js": "^8.4.0-rc2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "reactjs-popup": "^2.0.6",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "styled-components": "^6.1.11",
     "tailwindcss": "^3.4.1",
     "use-places-autocomplete": "^4.0.1",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,5 +66,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devServer": {
+    "proxy": {
+      "/api": {
+        "target": [
+          "https://moxie5screen.vercel.app/",
+          "http://localhost:3000"
+        ],
+        "secure": false,
+        "changeOrigin": true
+      }
+    }
   }
 }

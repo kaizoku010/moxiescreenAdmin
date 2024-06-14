@@ -1,0 +1,26 @@
+.cp-details-page{
+
+}
+
+.cpd-title{
+    border-bottom: 1px solid gray;
+    border-width: 10%;
+    margin-top: -1%;
+    padding-bottom: 10px;
+}
+
+.edit-space{
+    display: flex;
+    flex-direction: column;
+}
+
+.editCp-desc{
+    margin-top: 1% !important;
+}
+
+.desc2{}
+
+.edit-layer{
+    display: flex;
+    gap: 10px;
+}

@@ -18,7 +18,9 @@
 }
 
 .greetings{
- background-color: #f2ba29; 
+ /* background-color: #f2ba29;  */
+ background-size: cover;
+ background-image: url("../media/new_bg.jpg");
  flex-grow: 2;  
  margin-right: 10px;
  padding: 20px;
@@ -84,4 +86,10 @@ align-items: center;
     margin-bottom: 10px;
     height: 200px;
 
+}
+
+.add-text{
+margin-bottom: -20%;
+font-size: smaller;
+color: gray;
 }
